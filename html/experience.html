@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Pallavi H R</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="projects.html" class="nav-button">Projects</a></li>
+                <li><a href="skills.html" class="nav-button">Skills</a></li>
+                <li><a href="experience.html" class="nav-button">Experience</a></li>
+                <li><a href="education.html" class="nav-button">Education</a></li>
+                <li><a href="certificates.html" class="nav-button">Certificates</a></li>
+                <li><a href="contact.html" class="nav-button">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <h3>Data Engineer</h3>
+            <h4>Mfine, Bengaluru</h4>
+            <p><strong>12/10/2023 – Present</strong></p>
+            <ul>
+                <li>Worked on various data warehouse projects, onboarded new tables and updated existing ones to add columns for various new events.</li>
+                <li>Led the development of a generic tenant onboarding model using OOP concepts, allowing seamless onboarding of tenants with both general and tenant-specific attributes, reducing integration time and effort.</li>
+                <li>Led a project to push data to Big Query Tables from the ETL service for a client.</li>
+                <li>Optimized the in-house ETL service for greater cost-effectiveness by consolidating two separate services into a streamlined solution using Node.js.</li>
+                <li>Implemented duplicate handling for service-raised events in the ETL using Redis, cutting unnecessary storage and data transfer costs for duplicate data.</li>
+                <li>Developed and scheduled Cron jobs to automate data delivery via email using Python scripts.</li>
+                <li>Created partitions for transactional data tables and added indexes to improve query performance.</li>
+                <li>Automated the process of dropping old partitions using a Python script, optimizing storage and performance.</li>
+                <li>Resolved query issues raised by the analyst team and assisted in optimizing their queries, leading to improved performance.</li>
+                <li>Managed database access controls for enhanced security and data management.</li>
+            </ul>
+            <p><strong>Skills Used:</strong> Node.js, Python, Java, PostgreSQL, Database Management, ETL, Big Query, Git, Redis, Cron</p>
+            <p><strong>Software Used:</strong> Visual Studio Code, Bitbucket, Athena, Amazon S3, DBeaver, SNS, SQS, AWS Glue</p>
+        </div>
+
+        <div class="job">
+            <h3>Data Engineering Intern</h3>
+            <h4>Mfine, Bengaluru</h4>
+            <p><strong>11/04/2023 – 10/10/2023</strong></p>
+            <ul>
+                <li>Contributed to data warehouse projects, including onboarding new tables and adding new columns to existing tables.</li>
+                <li>Assisted the Analyst team in writing optimized queries to improve performance.</li>
+                <li>Developed an employee management website as part of a mini project enabling employee onboarding and management.</li>
+                <li>Admins can add and remove employees, interacting with employee, manager, and admin tables stored in PostgreSQL.</li>
+                <li>Utilized HTML, CSS, and Node.js for the development.</li>
+            </ul>
+            <p><strong>Skills Used:</strong> Node.js, Python, PostgreSQL, Database Management, ETL, Big Query, HTML, CSS</p>
+            <p><strong>Software Used:</strong> Visual Studio Code, Bitbucket, Athena, Amazon S3, DBeaver</p>
+        </div>
+    </section>
+
+    <div class="navigation-buttons">
+        <button id="prevButton" class="nav-button" onclick="navigate(-1)">&#9664; Prev</button>
+        <button id="nextButton" class="nav-button" onclick="navigate(1)">Next &#9654;</button>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

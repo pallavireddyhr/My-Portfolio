@@ -1,0 +1,254 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Center nav items */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Align navigation items in a row */
+    justify-content: center; /* Center navigation items */
+    margin-bottom: 20px; /* Space between nav and content */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between buttons */
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Same background color as resume button */
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.header-content {
+    display: flex; /* Flexbox for header content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center content */
+    margin: 20px; /* Margin for spacing */
+}
+
+.profile-pic {
+    width: 500px;
+    height: 550px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 6px solid #333; /* Border color matching header background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.text-content {
+    flex: 1; /* Takes the remaining space */
+    text-align: right; /* Align text to the right */
+}
+
+h1 {
+    color: #333; /* Dark color for contrast */
+    font-size: 4.5em; /* Adjust font size */
+    margin: 10px 0; /* Add margin for spacing */
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+h2 {
+    color: #555; /* Lighter color for contrast */
+    margin: 20px 0; /* Add margin for spacing */
+    font-size: 2.5em; /* Adjust font size */
+    margin-right: 40px;
+}
+
+.projects, .skills, .certificates, .contact {
+    margin-left: 40px; /* Adjust this value to increase/decrease space on the left */
+}
+
+.about {
+    margin: 30px 0; /* Add margin for spacing */
+    font-size: 1.5em; /* Adjust font size */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+}
+
+.resume-button {
+    padding: 10px 20px;
+    margin-top: 18px; /* Corrected typo from 18x */
+    font-size: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Changed to relative */
+    width: 100%;
+}
+
+footer a {
+    color: #fff; /* Set footer link color to white */
+    text-decoration: none; /* Remove underline for non-hover state */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.footer-content a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-content a:hover {
+    color: #218838; /* Change color to blue on hover */
+    text-decoration: underline; /* Add underline on hover for links */
+}
+.footer-content{
+    text-align: center;
+}
+
+/* Specific section styles */
+.career-summary, .about, .experience, .education ,.contact{
+    margin: 30px 0; /* Add margin for spacing */
+    max-width: 800px;
+    margin: auto;
+}
+
+ul {
+    padding-left: 0; /* Remove padding for the list */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.education-table {
+    width: 100%; /* Makes the table full width */
+    border-collapse: collapse; /* Merges borders */
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #000; /* Border for table cells */
+    padding: 8px; /* Adds padding for better spacing */
+    text-align: left; /* Aligns text to the left */
+}
+
+.education-table th {
+    background-color: #f2f2f2; /* Light gray background for header */
+}
+
+.navigation-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out buttons */
+    position: fixed; /* Fixed position to keep buttons visible */
+    left: 20px; /* Distance from the left */
+    right: 20px; /* Distance from the right */
+    bottom: 20px; /* Distance from the bottom */
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+#prevButton, #nextButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 18px; /* Increase font size for better visibility */
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.home-navigation-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align buttons to the right */
+    position: fixed; /* Fixed position to keep buttons visible */
+    right: 20px; /* Distance from the right */
+    bottom: 20px; /* Distance from the bottom */
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+.home-navigation-buttons .nav-button {
+    padding: 10px 20px;
+    margin: 0 10px; /* Space between buttons */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 18px; /* Increase font size for better visibility */
+}
+
+.home-navigation-buttons .nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* styles.css */
+.thank-you {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.thank-you-image {
+    max-width: 35%;
+    height: auto;
+    margin-top: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 2px solid #ccc; /* Add some visual emphasis to the quote */
+}
+.contact{
+    
+    text-align: center;
+}
+/* styles.css */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the details */
+    margin-top: 10px;
+}
+
+.contact-details span {
+    margin: 0 10px; /* Add horizontal spacing between details */
+}
